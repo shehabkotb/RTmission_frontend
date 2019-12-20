@@ -1,81 +1,88 @@
+<html lang="en">
+
 <head>
+    <title>Contact page</title>
     <link href="./fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-size: 15px;
+            font-family: Verdana;
+            line-height: 1.5;
+        }
+
+        h5 {
+            margin: 10px 0 10px 0;
+            letter-spacing: 5px;
+            font-size: 30px;
+            font-family: Verdana;
+            font-weight: 100;
+        }
+
+        .container {
+            padding: 20px 350px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #f1f1f1;
+            border-radius: 5px;
+            transition: .2s;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            border: 1px solid #333;
+            background-color: #fff;
+            color: #000;
+        }
+
+        .form {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .side {
+            flex: 30%;
+        }
+
+        .top {
+            text-align: center;
+        }
+    </style>
+
 </head>
 
-<style>
-    body {
-        font-size: 15px;
-        font-family: Verdana;
-        line-height: 1.5;
-    }
-  
-    h5 {
-        margin: 10px 0 10px 0;
-        letter-spacing: 5px;
-        font-size: 30px;
-        font-family: Verdana;
-        font-weight: 100;
-    }
+<body>
+    <div class="container">
+        <h5 class="top">CONTACT</h5>
+        <p class="top"><em>fan? Drop a note!</em></p>
 
-    .container {
-        padding: 20px 350px;
-    }
-
-    .btn {
-        padding: 10px 20px;
-        background-color: #333;
-        color: #f1f1f1;
-        border-radius: 5px;
-        transition: .2s;
-    }
-
-    .btn:hover,
-    .btn:focus {
-        border: 1px solid #333;
-        background-color: #fff;
-        color: #000;
-    }
-
-    .form {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0px;
-    }
-
-    .row {
-        display: flex;
-    }
-
-    .side {
-        flex: 30%;
-    }
-
-    .top {
-        text-align: center;
-    }
-</style>
-
-
-<div class="container">
-    <h5 class="top">CONTACT</h5>
-    <p class="top"><em>fan? Drop a note!</em></p>
-
-    <div class="row">
-        <div class="side">
-            <p><i class="fas fa-map-marker-alt"></i> Chicago, US</p>
-            <p><i class="fas fa-phone-alt"></i> Phone: +00 151515</p>
-            <p><i class="fas fa-envelope"></i> Email: mail@mail.com</p>
-        </div>
-        <form>
-            <div class="row">
-                <div>
-                    <input class="form" placeholder="Name" type="text">
-                </div>
-                <div style="margin-left: 10px;">
-                    <input class="form" placeholder="Email" type="email">
-                </div>
+        <div class="row">
+            <div class="side">
+                <p><i class="fas fa-map-marker-alt"></i> Chicago, US</p>
+                <p><i class="fas fa-phone-alt"></i> Phone: +00 151515</p>
+                <p><i class="fas fa-envelope"></i> Email: mail@mail.com</p>
             </div>
-            <input class="form" placeholder="Message"></textarea>
-            <input style="float: right;" class="btn" type="submit" value="Send"></input>
-        </form>
-    </div>
+            <form>
+                <div class="row">
+                    <div>
+                        <input class="form" placeholder="Name" type="text">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <input class="form" placeholder="Email" type="email">
+                    </div>
+                </div>
+                <input class="form" placeholder="Message"></textarea>
+                <input style="float: right;" class="btn" type="submit" value="Send"></input>
+            </form>
+        </div>
+</body>
+
+</html>
